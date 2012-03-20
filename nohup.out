@@ -1,0 +1,230 @@
+/usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/spec_set.rb:88:in `block in materialize': Could not find pg-0.13.1 in any of the sources (Bundler::GemNotFound)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/spec_set.rb:82:in `map!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/spec_set.rb:82:in `materialize'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/definition.rb:90:in `specs'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/definition.rb:135:in `specs_for'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/definition.rb:124:in `requested_specs'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/environment.rb:23:in `requested_specs'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/runtime.rb:11:in `setup'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler.rb:110:in `setup'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/bundler-1.0.21/lib/bundler/setup.rb:17:in `<top (required)>'
+	from /usr/local/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:59:in `require'
+	from /usr/local/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:59:in `rescue in require'
+	from /usr/local/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:35:in `require'
+	from /home/ubuntu/hw4_rottenpotatoes/config/boot.rb:6:in `<top (required)>'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from <internal:lib/rubygems/custom_require>:29:in `require'
+	from script/rails:5:in `<main>'
+=> Booting WEBrick
+=> Rails 3.1.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-03-19 11:00:40] INFO  WEBrick 1.3.1
+[2012-03-19 11:00:40] INFO  ruby 1.9.2 (2011-07-09) [i686-linux]
+[2012-03-19 11:00:40] INFO  WEBrick::HTTPServer#start: pid=5684 port=3000
+[2012-03-19 11:01:53] ERROR SignalException: SIGTERM
+	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+[2012-03-19 11:02:04] ERROR SignalException: SIGTERM
+	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
+=> Booting WEBrick
+=> Rails 3.1.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-03-19 11:05:29] INFO  WEBrick 1.3.1
+[2012-03-19 11:05:29] INFO  ruby 1.9.2 (2011-07-09) [i686-linux]
+[2012-03-19 11:05:29] INFO  WEBrick::HTTPServer#start: pid=5737 port=3000
+
+
+Started GET "/movies?ratings%5BG%5D=1&sort=title" for 86.61.88.5 at 2012-03-19 11:05:32 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1"}, "sort"=>"title"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G') ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (583.2ms)
+Completed 200 OK in 2078ms (Views: 1955.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-19 11:05:38 +0000
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-19 11:05:38 +0000
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-19 11:05:38 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-19 11:05:38 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&title_sort=true&commit=Refresh" for 86.61.88.5 at 2012-03-19 11:11:24 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "title_sort"=>"true", "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)
+Rendered movies/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-19 11:11:24 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:24 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:24 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:24 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 86.61.88.5 at 2012-03-19 11:11:33 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BR%5D=1" for 86.61.88.5 at 2012-03-19 11:11:34 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')[0m
+Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-19 11:11:34 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:34 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:34 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-19 11:11:34 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BR%5D=1" for 86.61.88.5 at 2012-03-19 11:12:04 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "R"=>"1"}}
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BR%5D=1" for 86.61.88.5 at 2012-03-19 11:12:05 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'R')
+Rendered movies/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-19 11:12:05 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:05 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:05 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:05 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&commit=Refresh" for 86.61.88.5 at 2012-03-19 11:12:12 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-19 11:12:13 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:13 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:13 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-19 11:12:13 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMovies (20111119180638)
+Migrating to AddMoreMovies (20120130161449)
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("movies")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (43.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (19.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (23.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
+  [1m[36m (20.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (44.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (20.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (26.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (19.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
+  [1m[36m (23.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (48.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (23.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (31.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (23.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
+  [1m[36m (20.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+
+
+Started GET "/assets/rails.png" for 86.61.88.5 at 2012-03-20 16:01:06 +0000
+Served asset /rails.png - 200 OK (1ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-20 16:01:13 +0000
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)
+Rendered movies/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-20 16:01:13 +0000
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-20 16:01:13 +0000
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-20 16:01:13 +0000
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-20 16:01:13 +0000
+Served asset /jquery.js - 200 OK (0ms)
