@@ -12,6 +12,10 @@ module NavigationHelpers
   #
   def path_to(page_name)
     case page_name
+	
+	when /the edit page for "(.*)"/ 
+		movie_path(Movie.find_by_title($1))+'/edit'
+		
 
     when /^the home\s?page$/
       '/'
