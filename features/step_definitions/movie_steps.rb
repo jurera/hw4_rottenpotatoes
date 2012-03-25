@@ -19,3 +19,4 @@ Then /the director of "(.*)" should be "(.*)"/ do |film,director|
 	
 	assert page.body.match(/#{director}/)!= nil&&Movie.find_by_title(film).director.to_s == director,"Assertion failed"
 end
+

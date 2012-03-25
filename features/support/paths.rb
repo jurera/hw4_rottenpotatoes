@@ -16,6 +16,14 @@ module NavigationHelpers
 	when /the edit page for "(.*)"/ 
 		movie_path(Movie.find_by_title($1))+'/edit'
 		
+	when /the details page for "(.*)"/ 
+		movie_path(Movie.find_by_title($1))
+		
+	when /the Similar Movies page for "(.*)"/
+		movie_path(Movie.find_by_title($1))+'/same_director'
+	
+	when /the movies home page/
+		movies_path
 
     when /^the home\s?page$/
       '/'
