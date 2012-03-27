@@ -1,21 +1,20 @@
--# in app/views/movies/show.html.haml
-
-%h1 Director: #{@movie.director.to_s}
+%h1 Movies by the same director
 
 %table#movies
   %thead
     %tr
-      %th{:class => @title_header}= link_to 'Movie Title', movies_path(:sort => 'title', :ratings => @selected_ratings), :id => 'title_header'
+      %th Title
       %th Rating
-      %th{:class => @date_header}= link_to 'Release Date', movies_path(:sort => 'release_date', :ratings => @selected_ratings), :id => 'release_date_header'
+      %th Director
+      %th Release Date
       %th More Info
   %tbody
     - @movies.each do |movie|
       %tr
-        %td= movie.title 
+        %td= movie.title
         %td= movie.rating
+        %td= movie.director
         %td= movie.release_date
         %td= link_to "More about #{movie.title}", movie_path(movie)
-		
-		
-= link_to 'Back to movie list', movies_path
+
+= link_to 'Back to movie', movie_path(params[:id])

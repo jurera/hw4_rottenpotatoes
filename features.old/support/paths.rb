@@ -12,23 +12,21 @@ module NavigationHelpers
   #
   def path_to(page_name)
     case page_name
+	
+	when /the edit page for "(.*)"/ 
+		movie_path(Movie.find_by_title($1))+'/edit'
+		
+	when /the details page for "(.*)"/ 
+		movie_path(Movie.find_by_title($1))
+		
+	when /the Similar Movies page for "(.*)"/
+		movie_path(Movie.find_by_title($1))+'/same_director'
+	
+	when /the movies home page/
+		movies_path
 
     when /^the home\s?page$/
-      movies_path
-
-    when /^the RottenPotatoes home page/
-      movies_path
-
-    when /^the edit page for "(.*)"/i
-      movie = Movie.find_by_title $1
-      edit_movie_path(movie.id)
-
-    when /^the details page for "(.*)"/i
-      movie = Movie.find_by_title $1
-      movie_path(movie.id)
-
-    when /^the Similar Movies page for "(.*)"/i
-      movie_path(Movie.find_by_title($1))+'/same_director'
+      '/'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

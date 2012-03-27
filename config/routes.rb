@@ -1,4 +1,8 @@
 Rottenpotatoes::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -13,6 +17,7 @@ Rottenpotatoes::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :movies
+  match '/coverage', :to => redirect('/index.html')
 
   # Sample resource route with options:
   #   resources :products do

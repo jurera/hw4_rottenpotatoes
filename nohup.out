@@ -7586,3 +7586,1141 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 188.230.156.188 at 2012-03-24 15:28:40 +0000
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 188.230.156.188 at 2012-03-25 07:50:06 +0000
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/coverage" for 188.230.156.188 at 2012-03-25 07:50:13 +0000
+
+ActionController::RoutingError (No route matches [GET] "/coverage"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/coverage/index.html" for 188.230.156.188 at 2012-03-25 07:50:24 +0000
+
+ActionController::RoutingError (No route matches [GET] "/coverage/index.html"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/coverage" for 188.230.156.188 at 2012-03-25 08:07:01 +0000
+
+
+Started GET "/coverage/index.html" for 188.230.156.188 at 2012-03-25 08:07:01 +0000
+
+ActionController::RoutingError (No route matches [GET] "/coverage/index.html"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/coverage/" for 188.230.156.188 at 2012-03-25 08:08:56 +0000
+
+
+Started GET "/public/index.html" for 188.230.156.188 at 2012-03-25 08:08:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/public/index.html"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/public/index.html" for 188.230.156.188 at 2012-03-25 08:09:04 +0000
+
+ActionController::RoutingError (No route matches [GET] "/public/index.html"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/movies" for 188.230.156.188 at 2012-03-25 08:14:56 +0000
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 188.230.156.188 at 2012-03-25 08:14:56 +0000
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 188.230.156.188 at 2012-03-25 08:14:56 +0000
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 188.230.156.188 at 2012-03-25 08:14:56 +0000
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 188.230.156.188 at 2012-03-25 08:14:56 +0000
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+Rendered movies/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 08:00:44 +0000
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 08:00:48 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 08:00:48 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 08:00:55 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/same_director.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 21ms (Views: 10.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 08:00:55 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-26 08:01:00 +0000
+  Processing by MoviesController#index as HTML
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 86.61.88.5 at 2012-03-26 08:01:00 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')[0m
+Rendered movies/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 08:01:00 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+  Processing by MoviesController#index as HTML
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+Rendered movies/index.html.haml within layouts/application (74.6ms)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 13:33:59 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4" for 86.61.88.5 at 2012-03-26 13:58:26 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 13:58:27 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 13:58:27 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4/same_director" for 86.61.88.5 at 2012-03-26 13:58:29 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/same_director.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 27ms (Views: 13.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 13:58:30 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 13:58:30 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 86.61.88.5 at 2012-03-26 14:21:39 +0000
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/rails/info/properties" for 86.61.88.5 at 2012-03-26 14:21:44 +0000
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  Processing by Rails::InfoController#properties as */*
+Rendered inline template (0.4ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public/index.html" for 86.61.88.5 at 2012-03-26 14:22:07 +0000
+
+ActionController::RoutingError (No route matches [GET] "/public/index.html"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/pages/home" for 86.61.88.5 at 2012-03-26 15:59:30 +0000
+  Processing by PagesController#home as HTML
+Rendered pages/home.html.erb within layouts/application (0.4ms)
+Compiled application.js  (6ms)  (pid 5737)
+Compiled pages.js  (89ms)  (pid 5737)
+Completed 200 OK in 116ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 15:59:31 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 15:59:31 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 15:59:31 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 15:59:31 +0000
+Served asset /pages.js - 200 OK (4ms)
+
+
+Started GET "/assets/0.5.3/jquery-1.6.2.min.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+Served asset /0.5.3/jquery-1.6.2.min.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/jquery-1.6.2.min.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/0.5.3/jquery.dataTables.min.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+Served asset /0.5.3/jquery.dataTables.min.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/jquery.dataTables.min.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+Served asset /0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/0.5.3/jquery.url.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+Served asset /0.5.3/jquery.url.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/jquery.url.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/0.5.3/highlight.pack.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+Served asset /0.5.3/highlight.pack.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/highlight.pack.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/0.5.3/jquery.timeago.js" for 86.61.88.5 at 2012-03-26 16:05:33 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/assets/0.5.3/app.js" for 86.61.88.5 at 2012-03-26 16:05:43 +0000
+Served asset /0.5.3/app.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/app.js"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/0.5.3/stylesheet.css" for 86.61.88.5 at 2012-03-26 16:05:43 +0000
+Served asset /0.5.3/stylesheet.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/stylesheet.css"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/0.5.3/highlight.css" for 86.61.88.5 at 2012-03-26 16:05:43 +0000
+Served asset /0.5.3/highlight.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/highlight.css"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css" for 86.61.88.5 at 2012-03-26 16:05:43 +0000
+Served asset /0.5.3/fancybox/jquery.fancybox-1.3.1.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css" for 86.61.88.5 at 2012-03-26 16:05:43 +0000
+Served asset /0.5.3/smoothness/jquery-ui-1.8.4.custom.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/0.5.3/loading.gif" for 86.61.88.5 at 2012-03-26 16:05:44 +0000
+Served asset /0.5.3/loading.gif - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/loading.gif"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/0.5.3/favicon.png" for 86.61.88.5 at 2012-03-26 16:05:44 +0000
+Served asset /0.5.3/favicon.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/favicon.png"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/0.5.3/favicon_green.png" for 86.61.88.5 at 2012-03-26 16:05:44 +0000
+Served asset /0.5.3/favicon_green.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/0.5.3/favicon_green.png"):
+  
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-26 18:02:33 +0000
+  Processing by MoviesController#index as HTML
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 1ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+Rendered movies/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:38 +0000
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 18:02:47 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:02:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:47 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4" for 86.61.88.5 at 2012-03-26 18:02:57 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:02:57 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:57 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:57 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:02:57 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/5" for 86.61.88.5 at 2012-03-26 18:03:01 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Rendered movies/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:03:02 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:02 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:02 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:02 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 18:03:31 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 9.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:03:32 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:32 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:32 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:32 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 18:03:39 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Aladdin' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."title" = 'Aladdin' LIMIT 1
+Rendered movies/same_director.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 18:03:39 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:39 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:39 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 18:03:39 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:26:12 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xc589ccc>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:26:42 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xc831600>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 19:28:43 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 28ms (Views: 16.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:28:43 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:28:43 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:28:43 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:28:43 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:28:45 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xce87158>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:28:48 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xd10c694>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:28:53 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xa141f18>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:29:00 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_others_with_same_director' for #<Class:0xb763710>):
+  app/controllers/movies_controller.rb:15:in `same_director'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 8.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:30:40 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:30:42 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (director = 'Kr nekdo' and id != 1)
+Rendered movies/same_director.html.haml within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `director' for nil:NilClass):
+    1: -# in app/views/movies/show.html.haml
+    2: 
+    3: %h1 Director: #{@movie.director.to_s}
+    4: 
+    5: = Movie.find_by_title("Aladdin").rating
+    6: 
+  app/views/movies/same_director.html.haml:3:in `_app_views_movies_same_director_html_haml___323069481_101720460'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:30:50 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (director = 'Kr nekdo' and id != 1)
+Rendered movies/same_director.html.haml within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `director' for nil:NilClass):
+    1: -# in app/views/movies/show.html.haml
+    2: 
+    3: %h1 Director: #{@movie.director.to_s}
+    4: 
+    5: = Movie.find_by_title("Aladdin").rating
+    6: 
+  app/views/movies/same_director.html.haml:3:in `_app_views_movies_same_director_html_haml___323069481_101720460'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.1ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (director = 'Kr nekdo' and id != 1)
+Rendered movies/same_director.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 27ms (Views: 15.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:47 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (director = 'Kr nekdo' and id != 1)
+Rendered movies/same_director.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 8.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:57 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/same_director" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+  Processing by MoviesController#same_director as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (director = 'Kr nekdo' and id != 1)
+Rendered movies/same_director.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:31:59 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/4" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:03 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 9.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:07 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/9" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" IS NULL
+Rendered movies/show.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:10 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?movie=9" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"movie"=>"9"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies?movie=9&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 11ms
+
+
+Started GET "/movies?movie=9&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"movie"=>"9", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')[0m
+Rendered movies/index.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 34ms (Views: 22.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-26 19:32:12 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+WARNING: Cucumber-rails required outside of env.rb.  The rest of loading is being defered until env.rb is called.
+  To avoid this warning, move 'gem cucumber-rails' under only group :test in your Gemfile
+=> Booting WEBrick
+=> Rails 3.1.0 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-03-26 22:55:46] INFO  WEBrick 1.3.1
+[2012-03-26 22:55:46] INFO  ruby 1.9.2 (2011-07-09) [i686-linux]
+[2012-03-26 22:55:46] INFO  WEBrick::HTTPServer#start: pid=20635 port=3000
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 188.230.156.188 at 2012-03-26 22:55:52 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')[0m
+Rendered movies/index.html.haml within layouts/application (36.8ms)
+Completed 200 OK in 260ms (Views: 249.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /application.js - 200 OK (29ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 188.230.156.188 at 2012-03-26 22:55:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 86.61.88.5 at 2012-03-27 16:43:11 +0000
+Served asset /rails.png - 304 Not Modified (36ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)
+Rendered movies/index.html.haml within layouts/application (98.9ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:16 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/update" for 86.61.88.5 at 2012-03-27 16:43:36 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"update"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "update"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with id=update):
+  app/controllers/movies_controller.rb:26:in `show'
+
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered pg-0.13.1/ruby/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-27 16:43:46 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'[0m
+Rendered movies/show.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 293ms (Views: 10.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-27 16:43:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:47 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:47 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1/edit" for 86.61.88.5 at 2012-03-27 16:43:53 +0000
+  Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered movies/edit.html.haml within layouts/application (121.5ms)
+Completed 200 OK in 237ms (Views: 235.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-27 16:43:54 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:54 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:54 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-27 16:43:54 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/movies/1" for 86.61.88.5 at 2012-03-27 17:18:01 +0000
+  Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rsOA8ZNEvOm+u0lqSYjjkYTxiFM4oYHwVeJiYyZj/N8=", "movie"=>{"title"=>"Aladdin", "rating"=>"PG", "release_date(1i)"=>"1992", "release_date(2i)"=>"11", "release_date(3i)"=>"25", "director"=>"Kr nekdo"}, "commit"=>"Update Movie Info", "id"=>"1"}
+  [1m[36mMovie Load (239.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  UPDATE "movies" SET "rating" = 'PG', "updated_at" = '2012-03-27 17:18:01.637626' WHERE "movies"."id" = 1
+Redirected to http://ec2-79-125-40-51.eu-west-1.compute.amazonaws.com:3000/movies/1
+Completed 302 Found in 393ms
+
+
+Started GET "/movies/1" for 86.61.88.5 at 2012-03-27 17:18:01 +0000
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."director" = 'Kr nekdo'
+Rendered movies/show.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 223ms (Views: 117.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-27 17:18:02 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-27 17:18:02 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-27 17:18:02 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-27 17:18:02 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-27 17:18:02 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 86.61.88.5 at 2012-03-27 17:24:09 +0000
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 86.61.88.5 at 2012-03-27 17:24:10 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 86.61.88.5 at 2012-03-27 17:24:10 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 86.61.88.5 at 2012-03-27 17:24:10 +0000
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 86.61.88.5 at 2012-03-27 17:24:10 +0000
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 86.61.88.5 at 2012-03-27 17:24:10 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
